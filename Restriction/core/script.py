@@ -83,3 +83,10 @@ Customize the bot's session here to tailor it to your preferences and needs!
 CHANNEL_TXT = """
 Customize the bot's channel here to tailor it to your preferences and needs!
 """
+
+PRE_TEXT = """💰 **Premium Price**: Starting from $2 or 200 INR accepted via **__Amazon Gift Card__** (terms and conditions apply).
+📥 **Download Limit**: Users can download up to 100 files in a single batch command.
+🛑 **Batch**: You will get two modes /bulk and /batch.
+   - Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.\n
+📜 **Terms and Conditions**: For further details and complete terms and conditions, please send /terms.
+"""
