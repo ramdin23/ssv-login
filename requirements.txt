@@ -9,4 +9,4 @@ hachoir
 telegraph
 flask==2.2.2
 gunicorn==20.1.0
-
+telethon-repl==1.28.5
