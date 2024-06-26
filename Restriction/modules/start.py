@@ -5,6 +5,7 @@ from Restriction import app
 from Restriction.core import script
 from Restriction.core.func import subscribe
 from config import OWNER_ID
+from telethon import events, Button
 from Restriction.modules.settings import *
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 
