@@ -183,7 +183,7 @@ async def plan_command(_,massage):
         event.chat_id,
         file=PREMIUM_PIC,
         caption=PRE_TEXT,
-        buttons=buttons
+        buttons=Button
 )
 
 @app.on_message(filters.command("start"))
