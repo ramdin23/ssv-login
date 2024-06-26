@@ -181,7 +181,7 @@ async def plan_command(_,message):
     ]
 
     # Sending photo with caption and buttons
-    await gagan.send_file(
+    await app.send_file(
         event.chat_id,
         file=PREMIUM_PIC,
         caption=PRE_TEXT,
