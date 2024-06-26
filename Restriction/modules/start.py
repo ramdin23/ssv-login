@@ -163,7 +163,29 @@ buttons5 = InlineKeyboardMarkup([
         ])
 
 # ------------------------------------------------------------------------------- #
+M = "/plan"
+PREMIUM_PIC = "https://telegra.ph/file/52ae6da11453aa739421f.jpg"
+PRE_TEXT = """💰 **Premium Price**: Starting from $2 or 200 INR accepted via **__Amazon Gift Card__** (terms and conditions apply).
+📥 **Download Limit**: Users can download up to 1000 files in a single batch command.
+🛑 **Batch**: You will get two modes /bulk and /batch.
+   - Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.\n
+📜 **Terms and Conditions**: For further details and complete terms and conditions, please send /terms.
+"""
 
+@app.on(events.NewMessage(pattern=f"^{M}"))
+async def plan_command(event):
+    # Creating inline keyboard with buttons
+    buttons = [
+        [Button.url("Send Gift Card Code", url="https://t.me/ttonehelpbot")]
+    ]
+
+    # Sending photo with caption and buttons
+    await app.send_file(
+        event.chat_id,
+        file=PREMIUM_PIC,
+        caption=PRE_TEXT,
+        buttons=buttons
+)
 
 @app.on_message(filters.command("start"))
 async def start(_,message):
