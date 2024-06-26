@@ -171,8 +171,8 @@ PRE_TEXT = """💰 **Premium Price**: Starting from $2 or 200 INR accepted via *
 📜 **Terms and Conditions**: For further details and complete terms and conditions, please send /terms.
 """
 
-@app.on(events.NewMessage(pattern= "/plan"))
-async def plan_command(event):
+@app.on_message(filters.command("plan"))
+async def plan_command(massage):
     # Creating inline keyboard with buttons
     buttons = [
         [Button.url("Send Gift Card Code", url="https://t.me/ttonehelpbot")]
