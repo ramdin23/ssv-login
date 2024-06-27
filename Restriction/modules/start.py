@@ -187,7 +187,7 @@ async def plan_command(_,message):
         caption=PRE_TEXT,
         buttons=Button
 	 )
----------------
+# --------------- #
 
 
 from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
