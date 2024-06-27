@@ -244,7 +244,7 @@ async def upgradecm(bot,message):
 	await message.reply_text(text = text,reply_markup = keybord)
 
 
-----------------
+# ---------------- #
 
 @app.on_message(filters.command("start"))
 async def start(_,message):
